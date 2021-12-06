@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-success.css">
+    <link rel="stylesheet" href="normalize/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="chatbot-css/stylechatbot.css">
+    <title>Civa</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="content-hero">
+            <div class="message-hero">
+                <img src="https://img.icons8.com/color-glass/100/000000/sent.png"/>
+                <h1 class="animate__animated animate__fadeInUp">Mensaje Enviado</h1>
+                <p>Gracias por escribirnos, en breves momentos te estaremos respondiendo.</p>
+                <a href="index.html" class="btn">Página Principal</a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="content-footer">
+                <p>SERVICIOS PATRICIA DEL ROSARIO QUISPE HERRERA E.I.R.L. Todos los derechos reservados 2021</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" 
+  chat-title="Chat CIVA E.I.R.L" 
+  agent-id="d643ea76-f1c3-42bf-af78-9ee43f6b2a70"
+  language-code="es"
+  chat-icon="./img/logo/LOGOCIVA.png"
+  intent="Hola! soy un agente a su disposición. ¿En que puedo ayudarlo?"
+  >
+  </df-messenger>
+  <script src="./app.js"></script>
+
+</body>
+</html>
